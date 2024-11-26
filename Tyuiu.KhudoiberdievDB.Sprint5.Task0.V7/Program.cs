@@ -28,7 +28,7 @@ namespace Tyuiu.KhudoiberdievDB.Sprint5.Task0.V7
             string res = ds.SaveToFileTextData(x);
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Создан!");
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }

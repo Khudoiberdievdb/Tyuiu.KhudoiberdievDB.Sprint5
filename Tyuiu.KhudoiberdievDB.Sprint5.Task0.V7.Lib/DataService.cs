@@ -11,7 +11,7 @@ public class DataService : ISprint5Task0V7
         string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
         double z= (-(Math.Pow(x, 3))) + 4 * (Math.Pow(x, 2)) - (3.0 / 2.0 * x);
         z = Math.Round(z, 3);
-        File.WriteAllText(path, Convert.ToString(z));
+        File.WriteAllText(path, Convert.ToString(z)); 
         return path;
     }
 }

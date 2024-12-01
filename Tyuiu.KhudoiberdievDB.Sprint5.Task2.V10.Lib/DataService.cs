@@ -36,28 +36,30 @@ namespace Tyuiu.KhudoiberdievDB.Sprint5.Task2.V10.Lib
                 }
             }
             string str = "";
-            for (int i = 0; i < cols; i++)
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < rows; j++)
+                for (int j = 0; j < cols; j++)
                 {
-                    if (j != cols -1 )
+                    if (j != cols - 1)
                     {
                         str = str + matrix[i, j] + ";";
                     }
 
                     else { str = str + matrix[i, j]; }
 
+                }
 
 
                     if (i != rows -1 )
                     {
-                        File.WriteAllText(path, str + Environment.NewLine);
+                        File.AppendAllText(path, str + Environment.NewLine);
                     }
                     else
                     {
-                        File.WriteAllText(path, str);
+                        File.AppendAllText(path, str);
                     }
-                }
+                    str = "";
+                
                 
             }
             return path;

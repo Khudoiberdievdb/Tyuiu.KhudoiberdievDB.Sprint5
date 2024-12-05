@@ -6,7 +6,6 @@ namespace Tyuiu.KhudoiberdievDB.Sprint5.Task6.V19.Lib
     {
         public int LoadFromDataFile(string path)
         {
-           path = @"C:\DataSprint5\InPutDataFileTask6V19.txt";
             string data = File.ReadAllText(path);
             string[] strings = data.Split(' ');
             int count = 0;
